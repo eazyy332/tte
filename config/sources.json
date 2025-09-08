@@ -1,0 +1,37 @@
+{
+  "eba_4_0": {
+    "taxonomies_zip": [
+      "https://<OFFICIAL-EBA>/EBA_4.0_Taxonomy_Package.zip"
+    ],
+    "dpm": {
+      "accdb": "https://<OFFICIAL-EBA>/EBA_4.0_DPM.accdb",
+      "csv_bundle": "https://<OFFICIAL-EBA>/EBA_4.0_DPM_CSV.zip"
+    },
+    "rules": {
+      "filing_rules_pdf": "https://<OFFICIAL-EBA>/EBA_Filing_Rules_v5.5_2025_01_14.pdf",
+      "validation_list_xlsx": "https://<OFFICIAL-EBA>/EBA_4.0_validation_rules.xlsx"
+    }
+  },
+  "eba_3_4": {
+    "taxonomies_zip": [
+      "https://<OFFICIAL-EBA>/EBA_3.4_Taxonomy_Package.zip"
+    ],
+    "dpm": {
+      "accdb": "https://<OFFICIAL-EBA>/EBA_3.4_DPM.accdb"
+    },
+    "rules": {
+      "filing_rules_pdf": "https://<OFFICIAL-EBA>/EBA_Filing_Rules_v5.4.pdf"
+    }
+  },
+  "eba_2_10": {
+    "taxonomies_zip": [
+      "https://<OFFICIAL-EBA>/EBA_2.10_Taxonomy_Package.zip"
+    ],
+    "dpm": {
+      "accdb": "https://<OFFICIAL-EBA>/EBA_2.10_DPM.accdb"
+    },
+    "rules": {
+      "filing_rules_pdf": "https://<OFFICIAL-EBA>/EBA_Filing_Rules_v5.3.pdf"
+    }
+  }
+}
