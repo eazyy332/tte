@@ -1,0 +1,9 @@
+data/
+*.zip
+*.accdb
+*.mdb
+*.7z
+*.rar
+__pycache__/
+.env
+.venv/
