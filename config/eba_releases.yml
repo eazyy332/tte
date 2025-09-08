@@ -1,0 +1,13 @@
+releases:
+  "4.0":
+    label: "EBA Reporting Framework 4.0"
+    sources_key: "eba_4_0"
+    modules: [corep, finrep, liquidity, leverage, large_exposures]
+  "3.4":
+    label: "EBA Reporting Framework 3.4"
+    sources_key: "eba_3_4"
+    modules: [corep, finrep, liquidity]
+  "2.10":
+    label: "EBA Reporting Framework 2.10"
+    sources_key: "eba_2_10"
+    modules: [corep, finrep]
