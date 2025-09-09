@@ -1,0 +1,27 @@
+name: Fetch EBA Release (on demand)
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "EBA framework version (e.g., 4.0, 3.4, 2.10)"
+        required: true
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -U pip && pip install -r requirements.txt
+      - name: Fetch
+        run: python scripts/fetch_eba_release.py --version "${{ github.event.inputs.version }}"
+      - name: Unpack
+        run: python scripts/unpack_taxonomy.py --version "${{ github.event.inputs.version }}"
+      - name: Extract DPM CSV (if bundle exists)
+        run: python scripts/extract_dpm_csv.py --version "${{ github.event.inputs.version }}"
+      - name: List outputs
+        run: |
+          echo "Downloads:" && ls -R data/downloads || true
+          echo "Taxonomies:" && ls -R data/taxonomies || true
+          echo "DPM:" && ls -R data/dpm || true
